@@ -375,6 +375,8 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
+    --font-montserrat: "Montserrat";
+    --color-primary-1: oklch(75.5%, 25.75%, 280.548%);
   }
 }
 @layer base {
@@ -525,19 +527,23 @@
   .table {
     display: table;
   }
+  .bg-primary-1 {
+    background-color: var(--color-primary-1);
+  }
+  .font-montserrat {
+    font-family: var(--font-montserrat);
+  }
+  .text-8xl {
+    font-size: var(--text-8xl);
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-}
-theme {
-  --font-montserrat: "Montserrat";
-  --color-primary-1: oklch(75.5%, 25.75%, 280.548%);
-  --color-primary-2: oklch(59.2%, 41.25%, 277.752%);
-  --color-neutral-very-light-greyish-blue: oklch(97.5%, 2.75%, 286.201%);
-  --color-neutral-light-greyish-blue: oklch(77.7%, 6%, 280.475%);
-  --color-neutral-greyish-blue: oklch(55.3%, 11.25%, 280.188%);
-  --color-neutral-dark-greyish-blue: oklch(42.1%, 8%, 277.912%);
 }
 @keyframes spin {
   to {
