@@ -2,8 +2,13 @@
 @import "tailwindcss";
 
 @theme {
-  /*Font*/
-  --font-montserrat: "Montserrat";
-  /*colours*/
-  --color-primary-1: oklch(75.5%, 25.75%, 280.548%);
+  --font-Montserrat: Montserrat;
+
+  --color-primary-1: hsl(236, 72%, 79%);
+  --color-primary-2: hsl(237, 63%, 64%);
+
+  --color-neutral-very-light-grayish-blue: hsl(240, 78%, 98%);
+  --color-neutral-light-grayish-blue: hsl(234, 14%, 74%);
+  --color-neutral-grayish-blue: hsl(233, 13%, 49%);
+  --color-neutral-dark-grayish-blue: hsl(232, 13%, 33%);
 }

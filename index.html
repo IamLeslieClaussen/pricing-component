@@ -5,10 +5,93 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/output.css" />
-    <title>Vite + TS</title>
+    <title>pricing component</title>
   </head>
-  <body class="font-montserrat text-[15px]">
-    <p class="bg-primary-1 text-8xl">Leslie Claussen</p>
+  <body
+    class="text-[15px] font-Montserrat min-w-screen min-h-screen flex justify-center items-center"
+  >
+    <div class="flex flex-col items-center">
+      <div
+        class="w-[239px] flex flex-col justify-center items-center mb-[40px]"
+      >
+        <h1 class="text-[32px] font-bold text-neutral-grayish-blue mb-[40px]">
+          Our Pricing
+        </h1>
+        <div class="flex space-x-[24px]">
+          <p class="text-neutral-light-grayish-blue">Annually</p>
+          <input type="checkbox" id="check" />
+          <label for="check"></label>
+          <p class="text-neutral-light-grayish-blue">Monthly</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 space-y-[32px]">
+        <div
+          class="w-[327px] h-[453px] py-[31px] px-[29px] flex flex-col justify-between items-center rounded-[10px]"
+        >
+          <h3 class="text-[18px] font-bold">Basic</h3>
+          <div
+            class="flex items-center font-bold text-neutral-dark-grayish-blue"
+          >
+            <p class="text-[40px]">$</p>
+            <p class="text-[72px]">19.99</p>
+          </div>
+          <ul class="space-y-[25px] font-bold text-neutral-dark-grayish-blue">
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button
+            class="font-bold uppercase rounded-[6px] w-[289px] h-[44px] bg-gradient-to-r from-[hsl(236,72%,79%)] to-[hsl(237,63%,64%)] text-neutral-very-light-grayish-blue"
+          >
+            learn more
+          </button>
+        </div>
+
+        <div
+          class="w-[327px] h-[453px] py-[31px] px-[29px] flex flex-col justify-between items-center rounded-[10px]"
+        >
+          <h3 class="text-[18px] font-bold">Basic</h3>
+          <div
+            class="flex items-center font-bold text-neutral-dark-grayish-blue"
+          >
+            <p class="text-[40px]">$</p>
+            <p class="text-[72px]">19.99</p>
+          </div>
+          <ul class="space-y-[25px] font-bold text-neutral-dark-grayish-blue">
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button
+            class="font-bold uppercase rounded-[6px] w-[289px] h-[44px] bg-gradient-to-r from-[hsl(236,72%,79%)] to-[hsl(237,63%,64%)] text-neutral-very-light-grayish-blue"
+          >
+            learn more
+          </button>
+        </div>
+
+        <div
+          class="w-[327px] h-[453px] py-[31px] px-[29px] flex flex-col justify-between items-center border-2"
+        >
+          <h3 class="text-[18px] font-bold">Basic</h3>
+          <div
+            class="flex items-center font-bold text-neutral-dark-grayish-blue"
+          >
+            <p class="text-[40px]">$</p>
+            <p class="text-[72px]">19.99</p>
+          </div>
+          <ul class="space-y-[25px] font-bold text-neutral-dark-grayish-blue">
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button
+            class="font-bold uppercase rounded-[6px] w-[289px] h-[44px] bg-gradient-to-r from-[hsl(236,72%,79%)] to-[hsl(237,63%,64%)] text-neutral-very-light-grayish-blue"
+          >
+            learn more
+          </button>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
