@@ -529,6 +529,9 @@
   .mb-\[40px\] {
     margin-bottom: 40px;
   }
+  .block {
+    display: block;
+  }
   .contents {
     display: contents;
   }
@@ -559,8 +562,14 @@
   .w-\[327px\] {
     width: 327px;
   }
+  .w-full {
+    width: 100%;
+  }
   .min-w-screen {
     min-width: 100vw;
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -608,6 +617,33 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-1 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-neutral-grayish-blue {
+    border-color: var(--color-neutral-grayish-blue);
+  }
+  .border-neutral-light-grayish-blue {
+    border-color: var(--color-neutral-light-grayish-blue);
+  }
+  .border-neutral-very-light-grayish-blue {
+    border-color: var(--color-neutral-very-light-grayish-blue);
+  }
+  .bg-\[hsl\(237\,63\%\,64\%\)\] {
+    background-color: hsl(237,63%,64%);
+  }
+  .bg-neutral-very-light-grayish-blue {
+    background-color: var(--color-neutral-very-light-grayish-blue);
+  }
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -625,6 +661,12 @@
   }
   .py-\[31px\] {
     padding-block: 31px;
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .text-center {
+    text-align: center;
   }
   .font-Montserrat {
     font-family: var(--font-Montserrat);
@@ -666,6 +708,64 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:border-2 {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 2px;
+      }
+    }
+  }
+  .hover\:border-neutral-grayish-blue {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-neutral-grayish-blue);
+      }
+    }
+  }
+  .hover\:border-neutral-very-light-grayish-blue {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-neutral-very-light-grayish-blue);
+      }
+    }
+  }
+  .hover\:bg-neutral-very-light-grayish-blue {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-neutral-very-light-grayish-blue);
+      }
+    }
+  }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:bg-gradient-to-r {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to right in oklab;
+        background-image: linear-gradient(var(--tw-gradient-stops));
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
+  .hover\:text-neutral-very-light-grayish-blue {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-neutral-very-light-grayish-blue);
+      }
+    }
   }
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
