@@ -538,9 +538,6 @@
   .grid {
     display: grid;
   }
-  .hidden {
-    display: none;
-  }
   .table {
     display: table;
   }
@@ -549,9 +546,6 @@
   }
   .h-\[453px\] {
     height: 453px;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -564,9 +558,6 @@
   }
   .w-\[327px\] {
     width: 327px;
-  }
-  .w-screen {
-    width: 100vw;
   }
   .min-w-screen {
     min-width: 100vw;
@@ -607,9 +598,6 @@
       margin-inline-end: calc(24px * calc(1 - var(--tw-space-x-reverse)));
     }
   }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-\[6px\] {
     border-radius: 6px;
   }
@@ -619,12 +607,6 @@
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
-  }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
-  }
-  .bg-primary-2 {
-    background-color: var(--color-primary-2);
   }
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
@@ -644,15 +626,8 @@
   .py-\[31px\] {
     padding-block: 31px;
   }
-  .text-center {
-    text-align: center;
-  }
   .font-Montserrat {
     font-family: var(--font-Montserrat);
-  }
-  .text-8xl {
-    font-size: var(--text-8xl);
-    line-height: var(--tw-leading, var(--text-8xl--line-height));
   }
   .text-\[15px\] {
     font-size: 15px;
