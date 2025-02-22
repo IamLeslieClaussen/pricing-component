@@ -18,10 +18,17 @@
           Our Pricing
         </h1>
         <div class="flex space-x-[24px]">
-          <p class="text-neutral-light-grayish-blue">Annually</p>
-          <input type="checkbox" id="check" />
-          <label for="check"></label>
-          <p class="text-neutral-light-grayish-blue">Monthly</p>
+          <p class="text-neutral-light-grayish-blue font-bold">Annually</p>
+          <label
+            for="check"
+            class="bg-primary-2 w-[56px] h-[32px] rounded-full relative cursor-pointer"
+          >
+            <input type="checkbox" id="check" class="sr-only peer" />
+            <span
+              class="w-[25px] h-[25px] bg-white absolute rounded-full left-1 top-1 peer-checked:bg-white peer-checked:left-6"
+            ></span>
+          </label>
+          <p class="text-neutral-light-grayish-blue font-bold">Monthly</p>
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 space-y-[32px]">
@@ -32,10 +39,16 @@
             Basic
           </h3>
           <div
-            class="flex items-center font-bold text-neutral-dark-grayish-blue"
+            class="monthly items-center font-bold text-neutral-dark-grayish-blue hidden"
           >
             <p class="text-[40px]">$</p>
             <p class="text-[72px]">19.99</p>
+          </div>
+          <div
+            class="yearly items-center font-bold text-neutral-dark-grayish-blue flex"
+          >
+            <p class="text-[40px]">$</p>
+            <p class="text-[72px]">199.99</p>
           </div>
           <ul class="space-y-[25px] font-bold text-neutral-dark-grayish-blue">
             <li>500 GB Storage</li>
@@ -54,10 +67,16 @@
         >
           <h3 class="text-[18px] font-bold">Basic</h3>
           <div
-            class="flex items-center font-bold text-neutral-very-light-grayish-blue"
+            class="monthly items-center font-bold text-neutral-very-light-grayish-blue hidden"
           >
             <p class="text-[40px]">$</p>
-            <p class="text-[72px]">19.99</p>
+            <p class="text-[72px]">24.99</p>
+          </div>
+          <div
+            class="yearly items-center font-bold text-neutral-very-light-grayish-blue flex"
+          >
+            <p class="text-[40px]">$</p>
+            <p class="text-[72px]">249.99</p>
           </div>
           <ul
             class="space-y-[25px] font-bold text-neutral-very-light-grayish-blue w-full"
@@ -92,10 +111,16 @@
             Basic
           </h3>
           <div
-            class="flex items-center font-bold text-neutral-dark-grayish-blue"
+            class="monthly items-center font-bold text-neutral-dark-grayish-blue hidden"
           >
             <p class="text-[40px]">$</p>
-            <p class="text-[72px]">19.99</p>
+            <p class="text-[72px]">39.99</p>
+          </div>
+          <div
+            class="yearly items-center font-bold text-neutral-dark-grayish-blue flex"
+          >
+            <p class="text-[40px]">$</p>
+            <p class="text-[72px]">399.99</p>
           </div>
           <ul class="space-y-[25px] font-bold text-neutral-dark-grayish-blue">
             <li>500 GB Storage</li>
