@@ -13,9 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   check.addEventListener("change", () => {
     if (check.checked) {
-      console.log("Switched to Monthly pricing");
-    } else {
       console.log("switched to Annual Pricing");
+      yearly.forEach((price) => price.classList.remove("flex"));
+      yearly.forEach((price) => price.classList.add("hidden"));
+      monthly.forEach((price) => price.classList.remove("hidden"));
+      monthly.forEach((price) => price.classList.add("flex"));
+    } else {
+      console.log("Switched to Monthly pricing");
+      yearly.forEach((price) => price.classList.remove("hidden"));
+      yearly.forEach((price) => price.classList.add("flex"));
+      monthly.forEach((price) => price.classList.remove("flex"));
+      monthly.forEach((price) => price.classList.add("hidden"));
     }
   });
 });
